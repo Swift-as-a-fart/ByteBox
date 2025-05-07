@@ -1408,7 +1408,7 @@
                     name: "chip wave",
                     customType: 0
                 }, {
-                    name: "FM (expert)",
+                    name: "FM (custom)",
                     customType: 1
                 }, {
                     name: "basic noise",
@@ -1435,20 +1435,34 @@
             }, {
                 name: "ByteBox Presets",
                 presets: a([{
-                    name: "square wave",
-                    midiProgram: 80,
+                    name: "Ciesialka",
+                   settings: {
+                    name: "FM bass",
+                    midiProgram: 39,
                     settings: {
-                        type: "chip",
+                        type: "FM",
                         eqFilter: [],
                         effects: [],
                         transition: "interrupt",
                         fadeInSeconds: 0,
-                        fadeOutTicks: -1,
-                        chord: "arpeggio",
-                        wave: "square",
-                        unison: "none",
-                        envelopes: []
-		    }
+                        fadeOutTicks: 0,
+                        chord: "custom interval",
+                        algorithm: "1←2←(3 4)",
+                        feedbackType: "1⟲",
+                        feedbackAmplitude: 4,
+                        operators: [{
+                            frequency: "2×",
+                            amplitude: 15
+                        }, {
+                            frequency: "5×",
+                            amplitude: 15
+                        }, {
+                            frequency: "1×",
+                            amplitude: 7
+                        }, {
+                            frequency: "3×",
+                            amplitude: 2
+                        }]}} //For some reason, this is turned into a triangle wave with a reverb. No clue why.
                     }])
                 }, {
                 name: "Retro Presets",
