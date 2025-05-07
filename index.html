@@ -199,7 +199,7 @@
                             <li><b>[ ]</b>: move playhead backward or forward</li>
                             <li><b>F/H</b>: move to First or Highlighted pattern </li>
                             <li><b>Shift & Drag</b>: select part of a pattern (long press on touch screen)</li>
-                            <li>Check BeepBox's edit menu for more!</li>
+                            <li>Check the ByteBox's edit menu for more!</li>
                         </ul>
                     </div>
                     <p>
@@ -499,7 +499,7 @@
                 name: "B",
                 isWhiteKey: !0,
                 basePitch: 23
-            }]), e.blackKeyNameParents = [-1, 1, -1, 1, -1, 1, -1, -1, 1, -1, 1, -1], e.tempoMin = 30, e.tempoMax = 300, e.echoDelayRange = 24, e.echoDelayStepTicks = 4, e.echoSustainRange = 8, e.echoShelfHz = 4e3, e.echoShelfGain = Math.pow(2, -.5), e.reverbShelfHz = 8e3, e.reverbShelfGain = Math.pow(2, -1.5), e.reverbRange = 4, e.reverbDelayBufferSize = 16384, e.reverbDelayBufferMask = e.reverbDelayBufferSize - 1, e.beatsPerBarMin = 3, e.beatsPerBarMax = 16, e.barCountMin = 1, e.barCountMax = 128, e.instrumentCountMin = 1, e.layeredInstrumentCountMax = 4, e.patternInstrumentCountMax = 10, e.partsPerBeat = 24, e.ticksPerPart = 2, e.rhythms = a([{
+            }]), e.blackKeyNameParents = [-1, 1, -1, 1, -1, 1, -1, -1, 1, -1, 1, -1], e.tempoMin = 1, e.tempoMax = 500, e.echoDelayRange = 24, e.echoDelayStepTicks = 4, e.echoSustainRange = 8, e.echoShelfHz = 4e3, e.echoShelfGain = Math.pow(2, -.5), e.reverbShelfHz = 8e3, e.reverbShelfGain = Math.pow(2, -1.5), e.reverbRange = 4, e.reverbDelayBufferSize = 16384, e.reverbDelayBufferMask = e.reverbDelayBufferSize - 1, e.beatsPerBarMin = 3, e.beatsPerBarMax = 16, e.barCountMin = 1, e.barCountMax = 128, e.instrumentCountMin = 1, e.layeredInstrumentCountMax = 4, e.patternInstrumentCountMax = 10, e.partsPerBeat = 24, e.ticksPerPart = 2, e.rhythms = a([{
                 name: "÷3 (triplets)",
                 stepsPerBeat: 3,
                 ticksPerArpeggio: 4,
@@ -520,7 +520,7 @@
                 ],
                 roundUpThresholds: [3, 9, 17, 21]
             }, {
-                name: "÷6",
+                name: "÷6 (sextuplets)",
                 stepsPerBeat: 6,
                 ticksPerArpeggio: 4,
                 arpeggioPatterns: [
@@ -540,7 +540,7 @@
                 ],
                 roundUpThresholds: null
             }, {
-                name: "freehand",
+                name: "freehanded!!1!",
                 stepsPerBeat: 24,
                 ticksPerArpeggio: 3,
                 arpeggioPatterns: [
@@ -780,7 +780,7 @@
                 arpeggiates: !1,
                 strumParts: 0,
                 singleTone: !0
-            }]), e.maxChordSize = 4, e.operatorCount = 4, e.maxPitchOrOperatorCount = Math.max(e.maxChordSize, e.operatorCount), e.algorithms = a([{
+            }]), e.maxChordSize = 16, e.operatorCount = 4, e.maxPitchOrOperatorCount = Math.max(e.maxChordSize, e.operatorCount), e.algorithms = a([{
                 name: "1←(2 3 4)",
                 carrierCount: 1,
                 associatedCarrier: [1, 1, 1, 1],
