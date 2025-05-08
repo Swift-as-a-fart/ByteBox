@@ -1435,10 +1435,8 @@
             }, {
                 name: "ByteBox Presets",
                 presets: a([{
-                    name: "Ciesialka",
-                   settings: {
-                    name: "FM bass",
-                    midiProgram: 39,
+                    name: "Ciesialka", //For some reason, this is turned into a triangle wave with a reverb. No clue why.
+		    midiProgram: 39,
                     settings: {
                         type: "FM",
                         eqFilter: [],
@@ -1462,7 +1460,8 @@
                         }, {
                             frequency: "3×",
                             amplitude: 2
-                        }]}} //For some reason, this is turned into a triangle wave with a reverb. No clue why.
+                        }]}
+		   }, { 
                     }])
                 }, {
                 name: "Retro Presets",
