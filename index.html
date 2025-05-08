@@ -530,7 +530,7 @@
                 ],
                 roundUpThresholds: null
             }, {
-                name: "÷8",
+                name: "÷8 (octoplets)",
                 stepsPerBeat: 8,
                 ticksPerArpeggio: 3,
                 arpeggioPatterns: [
@@ -1402,13 +1402,13 @@
                     return null
                 }
             }
-            x.version = "4.2", x.versionDisplayName = "BeepBox", x.releaseNotesURL = "https://github.com/johnnesky/beepbox/releases/tag/v" + x.version, x.isOnMac = /^Mac/i.test(navigator.platform) || /Mac OS X/i.test(navigator.userAgent) || /^(iPhone|iPad|iPod)/i.test(navigator.platform) || /(iPhone|iPad|iPod)/i.test(navigator.userAgent), x.ctrlSymbol = x.isOnMac ? "⌘" : "Ctrl+", x.ctrlName = x.isOnMac ? "command" : "control", x.presetCategories = a([{
+            x.version = "0.5.2", x.versionDisplayName = "ByteBox", x.releaseNotesURL = "https://github.com/johnnesky/beepbox/releases/tag/v" + x.version, x.isOnMac = /^Mac/i.test(navigator.platform) || /Mac OS X/i.test(navigator.userAgent) || /^(iPhone|iPad|iPod)/i.test(navigator.platform) || /(iPhone|iPad|iPod)/i.test(navigator.userAgent), x.ctrlSymbol = x.isOnMac ? "⌘" : "Ctrl+", x.ctrlName = x.isOnMac ? "command" : "control", x.presetCategories = a([{
                 name: "Custom Instrument Bases",
                 presets: a([{
                     name: "chip wave",
                     customType: 0
                 }, {
-                    name: "FM (custom)",
+                    name: "FM",
                     customType: 1
                 }, {
                     name: "basic noise",
@@ -1461,7 +1461,21 @@
                             frequency: "3×",
                             amplitude: 2
                         }]}
-		   }, { 
+		   }, {
+			name: "1/4 pulse",
+			midiProgram: 80,
+			settings: {
+				type: "chip",
+				eqFilter: [],
+				effects: [],
+				transition: "normal",
+				fadeInSeconds: 0,
+				fadeOutTicks: 0,
+				chord: "arpeggio",
+				wave: "1/4 pulse",
+				unison: "none",
+				envelopes: []
+			}
                     }])
                 }, {
                 name: "Retro Presets",
@@ -1472,7 +1486,7 @@
                         type: "chip",
                         eqFilter: [],
                         effects: [],
-                        transition: "interrupt",
+                        transition: "normal",
                         fadeInSeconds: 0,
                         fadeOutTicks: -1,
                         chord: "arpeggio",
@@ -1487,7 +1501,7 @@
                         type: "chip",
                         eqFilter: [],
                         effects: [],
-                        transition: "interrupt",
+                        transition: "normal",
                         fadeInSeconds: 0,
                         fadeOutTicks: -1,
                         chord: "arpeggio",
